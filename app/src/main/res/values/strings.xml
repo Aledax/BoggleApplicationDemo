@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ButtonDemo</string>
+
+<!--    <string name="server_address">http://192.168.56.1:8081</string>-->
+    <string name="server_address">http://20.220.24.219:8081</string>
+
+    <string name="main_title_text">- Home -</string>
+    <string name="main_button1_caption">Mystery City</string>
+    <string name="main_button2_caption">Device Info</string>
+    <string name="main_button3_caption">Server Info</string>
+    <string name="main_button4_caption">What\'s this?</string>
+
+    <string name="info_title_text">- Device -</string>
+    <string name="info_manu_text">Manufacturer</string>
+    <string name="info_model_text">Model</string>
+    <string name="info_location_text">Current City</string>
+    <string name="info_location_button_caption">Grant Permissions</string>
+
+    <string name="server_title_text">- Server -</string>
+    <string name="server_ip_text">IP addresses</string>
+    <string name="server_time_text">Local times</string>
+    <string name="server_name_text">People</string>
+    <string name="server_placeholder_text">No connection</string>
+
+    <string name="boggle_title_text">- Boggle -</string>
+    <string name="boggle_button_placeholder_caption"></string>
+    <string name="boggle_button_start_caption">Start</string>
+    <string name="boggle_score_placeholder_text">-</string>
+    <string name="boggle_timer_placeholder_text">-</string>
+    <string name="boggle_feedback_placeholder_text">Welcome to Boggle!</string>
+    <string name="boggle_score_title_text">Score</string>
+    <string name="boggle_timer_title_text">Time</string>
+</resources>

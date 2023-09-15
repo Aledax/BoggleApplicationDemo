@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/testButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:divider="@drawable/horizontal_divider"
+        android:dividerPadding="20dp"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="30dp"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/boggle_title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:alpha="1"
+            android:fontFamily="@font/infinity_thin"
+            android:gravity="center"
+            android:text="@string/boggle_title_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <LinearLayout
+            android:id="@+id/boggle_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:divider="@drawable/vertical_divider"
+                android:dividerPadding="10dp"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/boggle_score_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/infinity_regular"
+                        android:text="@string/boggle_score_title_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/boggle_score_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/infinity_thin"
+                        android:text="@string/boggle_score_placeholder_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/boggle_timer_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/infinity_regular"
+                        android:text="@string/boggle_timer_title_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/boggle_timer_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/infinity_thin"
+                        android:text="@string/boggle_timer_placeholder_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/boggle_board_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/boggle_board_row0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/boggle_button0"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                    <Button
+                        android:id="@+id/boggle_button1"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                    <Button
+                        android:id="@+id/boggle_button2"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/boggle_board_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/boggle_button3"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                    <Button
+                        android:id="@+id/boggle_button4"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                    <Button
+                        android:id="@+id/boggle_button5"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/boggle_board_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/boggle_button6"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                    <Button
+                        android:id="@+id/boggle_button7"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                    <Button
+                        android:id="@+id/boggle_button8"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/infinity_regular"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/boggle_button_placeholder_caption"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        app:backgroundTint="@color/white_faint" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/boggle_feedback_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/infinity_thin"
+                android:text="@string/boggle_feedback_placeholder_text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/boggle_start_button"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/infinity_regular"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/boggle_button_start_caption"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white_faint"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
