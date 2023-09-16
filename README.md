@@ -4,6 +4,8 @@ A recreation of the classic game *Boggle*, ported to Android. It is also inspire
 
 To play the game, download the APK on your Android device, located at 'app/build/outputs/apk/debug/app-debug.apk'. Click on the button that says "What's this?" to open the Boggle screen. Note that it can only be played if the remote Azure VM is active.
 
+This is the Frontend repo, uploaded directly from Android Studio. [Here](https://github.com/Aledax/BoggleApplicationDemo_Backend) is the Backend repo link.
+
 ## Gameplay
 
 On the Boggle screen, tap "Start" to start playing, upon which the app will fetch the current Boggle board from the server and start the countdown timer.
